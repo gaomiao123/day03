@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var num = [13,5,2,0,89,102,45,12,-9]
+		var min = num[0];
+		var MIN_INDEX = 0;
+		for(var i=1;i<num.length;i++){
+			if(min > num[i]){
+			var temp = num[i];
+			   num[i] = min;
+			   min = temp;
+			}
+			MIN_INDEX = i;
+		}
+		console.log(min+'-------'+MIN_INDEX);
+	</script>
+</body>
+</html>

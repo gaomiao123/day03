@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var numbers = [4,5,6,12,105,0,9,55];
+		var max = numbers[0];
+		var MAX_INDEX = 0;
+		for(var i=1;i<numbers.length;i++){
+			if(numbers[i] > max){
+				var temp = numbers[i];
+				numbers[i] = max;
+				max = temp;
+			}
+			MAX_INDEX = i;
+		}
+		console.log(max+"------"+MAX_INDEX);
+	</script>
+</body>
+</html>

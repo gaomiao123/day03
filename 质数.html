@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function sushu(n){
+			var shu="质数";
+			for(var i=2;i<parseInt(n/2);i++){
+				if(n%i==0){
+					shu="合数";
+				}
+			}
+			console.log(shu);
+		}sushu(17);
+	</script>
+</body>
+</html>
